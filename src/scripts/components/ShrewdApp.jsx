@@ -17,6 +17,8 @@ require('../../styles/reset.css');
 require('../../styles/main.css');
 
 var App = React.createClass({
+	componentDidMount: function() {		
+	},
 	render:function(){
 		var content = this.props.activeRoute;
 		return (
@@ -40,7 +42,7 @@ var Router = React.createClass({
     );
   }
 });
-
+Parse.initialize("GnbgyZyfEOX3lL1qi9v0W2CiRMIeVspYwMY6dPO6", "7GgaSF1V0kXOQIsOYNlDqSXWbSZcAx6IeNIpNW3y");
 React.renderComponent(<Router />, document.getElementById('content')); // jshint ignore:line
 
 module.exports = Router;
