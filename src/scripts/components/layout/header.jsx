@@ -20,7 +20,9 @@ var LoginModal = React.createClass({
 	render: function(){
 		return (
 			<Modal title="Login">
- 				<Login />
+				<div className="modal-body">
+ 					<Login />
+ 				</div>
  			</Modal>
 		);	
 	}
